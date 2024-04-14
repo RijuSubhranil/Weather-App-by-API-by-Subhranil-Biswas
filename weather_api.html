@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="weather_api.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <div class="blur">
+        <h1>Climate Check</h1>
+        <br>
+        <h3>Enter City Name & check the Weather</h3>
+        <br>
+        <div class="container">
+            <div class="input">
+                <input type="text" placeholder="Enter City">
+                <button class="search">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+                <button class="cancel">
+                    <i class="fa fa-x" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="weather-details">
+                <img src="clear.png" class="weather_img">
+                <h3 class="weather_type" style="color:black">--</h3>
+                <h2 class="temp">--<sup>o</sup>C</h2>
+                <div class="max_min">
+                    <h4 class="max">(--<sup>o</sup>C/</h4>
+                    <h4 class="min">--<sup>o</sup>C)</h4>
+                </div>
+                <div class="wind_humid">
+                    <div class="speed">
+                        <i class="fa-solid fa-wind"></i>
+                        <span class="wind">-- km/h</span>
+                        <p class="windspeed">Wind Speed</p>
+
+                    </div>
+                    <div class="humidity">
+                        <i class="fa-solid fa-droplet"></i>
+                        <span class="humid">--%</span>
+                        <p class="humiditylevel">Humidity</p>
+                    </div>
+                </div>
+
+                <div class="feelslike_pressure">
+                    <div class="feel">
+                        <span class="feel_temp">--<sup>o</sup>C</span>
+                        <p id="data">Real Feel</p>
+                    </div>
+                    <div class="pressure">
+                        <span class="press">--mmHg</span>
+                        <p id="data">Pressure</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <span id="element" style="border-left:1900px;color:white;font-size: 20px;"></span>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="weather_api.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Made by Subhranil Biswas'],
+      typeSpeed: 70,
+    });
+  </script>
+</body>
+</html>

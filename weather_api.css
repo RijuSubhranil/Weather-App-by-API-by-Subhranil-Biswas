@@ -1,0 +1,97 @@
+.blur{
+    background-color: rgba(0,0,0,0.4);
+    height:100vh;
+}
+h1,h3{
+    font-family:sans-serif;
+    margin:auto;
+    text-align: center;
+    color:white;
+}
+h1{
+    text-decoration:underline double;
+}
+body{
+    background: url("bgPic.jpg");
+    background-size: cover;
+    height:100vh;
+    margin:auto;
+}
+.input{
+    text-align: center;
+}
+input{
+    height:25px;
+    width:190px;
+    border-radius: 15px;
+    font-size: 20px;
+    margin:10px;
+}
+.search{
+    height:30px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.cancel{
+    height:30px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.weather{
+    margin:auto;
+    height: auto;
+    width:300px;
+    border:1px solid gray;
+    border-radius: 20px;
+}
+p{
+    color:black;
+    font-size: 20px;
+}
+span{
+    color:black;
+    font-size: 20px;
+}
+.weather_img{
+    height:90px;
+    width:90px;
+}
+.weather-details{
+    margin:auto;
+    text-align: center;
+    height:auto;
+    width:300px;
+    background-color: cornsilk;
+    border-radius: 10%;
+    color:black;
+}
+.wind_humid{
+    display: flex;
+    justify-content: center; 
+}
+.speed{
+    margin-right: 10px;
+}
+.humidity{
+    margin-right: 10px;
+}
+.feelslike_pressure{
+    display: flex;
+    justify-content: center;
+}
+.feel{
+    margin-right: 10px;
+}
+.pressure{
+    margin-right: 10px;
+}
+.feel_temp,.press{
+    color:black;
+}
+#data{
+    color:black;
+}
+.max_min{
+    display: flex;
+    justify-content: center;
+}
