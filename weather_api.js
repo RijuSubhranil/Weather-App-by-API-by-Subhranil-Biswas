@@ -23,8 +23,8 @@ async function checkWeather(city){
     windSpeed.innerHTML=`${weather_data.wind.speed}km/h`;
     feel_temp.innerHTML=`${Math.round(weather_data.main.feels_like-273.15)}°C`;
     press.innerHTML=`${weather_data.main.pressure}mmHg`;
-    maxTemp.innerHTML=`${Math.round(weather_data.main.temp_max-273.15)}°C`;
-    minTemp.innerHTML=`${Math.round(weather_data.main.temp_min-273.15)}°C`;
+    maxTemp.innerHTML=`(${Math.round(weather_data.main.temp_max-273.15)}°C/`;
+    minTemp.innerHTML=`${Math.round(weather_data.main.temp_min-273.15)}°C)`;
 
     switch(weather_data.weather[0].main){
         case 'Clouds': img.src="cloud.png";
@@ -45,4 +45,12 @@ btn1.addEventListener("click",async()=>{
 })
 btn2.addEventListener("click",async()=>{
     inp.value="";
+    windSpeed.innerHTML="--km/h";
+    temperature.innerHTML="--°C";
+    weatherKind.innerHTML="--";
+    weatherHumid.innerHTML="--%";
+    feel_temp.innerHTML="--°C";
+    maxTemp.innerHTML="(--°C/";
+    minTemp.innerHTML="--°C)";
+    press.innerHTML="--mmHg";
 })
